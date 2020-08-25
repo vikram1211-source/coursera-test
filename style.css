@@ -1,0 +1,113 @@
+*{margin: 0 ; padding: 0 ; box-sizing: border-box;}
+
+	body{
+		font-family: sans-serif;
+	}
+	.container{
+		text-align: center;
+		margin-top: 50px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+
+	.heading{
+		text-align: center;
+	}
+
+	.child{
+		width: 30%;
+		margin:18px 5px;
+		margin-top: 32px;
+		border:2px solid black;
+		display: inline-block;
+	}
+
+	.child1{
+		width: 30%;
+		margin: 18px 5px;
+		display: inline-block;
+		border:2px solid black;
+	}
+	.child2{
+		border:2px solid red;
+		margin:18px 5px;
+		display: inline-block;
+		width: 30%;
+	}
+
+	.child-content , .child-content1 , .child-content2{
+		margin-top: 16px;
+	}
+
+	.child-title , .child-title1 , .child-title2{
+		text-align: right;
+		margin-top: 5px;
+	}
+
+
+	.title{
+		background: #ff7171;
+		padding: 5px 15px;
+	}
+
+	.title1{
+		background: #ec823a;
+		padding: 5px 15px;
+	}
+	.title2{
+		padding: 5px 15px;
+		background: #99b898;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .child{
+  	display: block;
+  	width: 100%;
+  	margin:18px 5px;
+  }
+
+  .child1{
+  	display: block;
+  	margin:18px 5px;
+  	width: 100%;
+  }
+
+  .child2{
+  	display: block;
+  	margin:18px 5px;
+  	width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+.child{
+	width: 48%;
+	margin: 18px 5px;
+}
+.child1{
+	width: 48%;
+	margin: 18px 5px;
+}
+
+
+  .child2{
+  	display: block;
+  	width: 100%;
+  }
+  
+}
