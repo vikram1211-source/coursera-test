@@ -1,105 +1,21 @@
-*{margin: 0 ; padding: 0 ; box-sizing: border-box;}
 
-	body{
-		font-family: sans-serif;
-	}
-	.container{
-		text-align: center;
-		margin-top: 50px;
-		margin-left: 16px;
-		margin-right: 16px;
-	}
+function nameSearch()
+{
 
-	.heading{
-		text-align: center;
-	}
+	var arrName = [];
+		
+		for(var i = 0 ; i < 8 ; i++)
+ 		{
+ 			arrName[i] = prompt('Please Enter 8 names');
 
-	.child{
-		width: 30%;
-		margin:18px 5px;
-		margin-top: 32px;
-		border:2px solid black;
-		display: inline-block;
-	}
+ 			if(arrName[i].charAt(0) == 'j' || arrName[i].charAt(0) == 'J' )
+ 			{
+ 				console.log('GoodBye' + " " + arrName[i]);
+ 			}
+ 			else
+ 			{
+ 				console.log('Hello' + " " + arrName[i]);	
+ 			}
+ 		}
 
-	.child1{
-		width: 30%;
-		margin: 18px 5px;
-		display: inline-block;
-		border:2px solid black;
-	}
-	.child2{
-		border:2px solid red;
-		margin:18px 5px;
-		display: inline-block;
-		width: 30%;
-	}
-
-	.child-content , .child-content1 , .child-content2{
-		margin-top: 16px;
-	}
-
-	.child-title , .child-title1 , .child-title2{
-		text-align: right;
-		margin-top: 5px;
-	}
-
-
-	.title{
-		background: #ff7171;
-		padding: 5px 15px;
-	}
-
-	.title1{
-		background: #ec823a;
-		padding: 5px 15px;
-	}
-	.title2{
-		padding: 5px 15px;
-		background: #99b898;
-	}
-
-
-
-@media only screen and (max-width: 1024px)  {
-  
-  
-.child{
-	width: 48%;
-	margin: 18px 5px;
-}
-.child1{
-	width: 48%;
-	margin: 18px 5px;
-}
-
-
-  .child2{
-  	display: block;
-  	width: 100%;
-  }
-  
-
-
-@media only screen and (max-width: 767px) {
-
-  .child{
-  	display: block;
-  	width: 100%;
-  	margin:18px 5px;
-  }
-
-  .child1{
-  	display: block;
-  	margin:18px 5px;
-  	width: 100%;
-  }
-
-  .child2{
-  	display: block;
-  	margin:18px 5px;
-  	width: 100%;
-  }
-}
-
-
+} 
